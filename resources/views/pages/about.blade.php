@@ -1,9 +1,9 @@
-@extends('layouts.default')
+@extends('layouts.default',['title'=>'About'])
 @section('content')
 
 
 <div class="container text-center mt-4">
-    <h2 class=" ">Bienvenu sur le laracarte de <strong>Ndeme Yvan</strong></h2>
+    <h2 class=" ">Bienvenue sur le laracarte de <strong>Ndeme Yvan</strong></h2>
     <p class="my-3 ">Finally a little Javascript is needed to set an interval which
          will load and update the next image in the sequence and update the css. Initially 
          I was just saving the image src in the loaded array however the browser was 
