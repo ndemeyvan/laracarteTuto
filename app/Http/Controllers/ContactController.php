@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
+use App\Http\Requests\ContactValidationRequest;
 
 class ContactController extends Controller
 {
@@ -32,9 +32,17 @@ class ContactController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ContactValidationRequest $request)
     {
-        //
+  
+        new ContactMessageCreated($request->name,$request->email,$request->message);
+        // $name= $request->name;
+        // $email= $request->email;
+        // $message =  $request->message;
+        //  Event::create([
+        //      'title' => $title,
+        //      'description' => $description,
+        //  ]);
     }
 
     /**
