@@ -677,6 +677,51 @@
         ]
     },
     {
+        "name": "garygreen/pretty-routes",
+        "version": "1.0.9",
+        "version_normalized": "1.0.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/garygreen/pretty-routes.git",
+            "reference": "5ccc9da7b61dec15ad733007956b0ea5af6dd8bd"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/garygreen/pretty-routes/zipball/5ccc9da7b61dec15ad733007956b0ea5af6dd8bd",
+            "reference": "5ccc9da7b61dec15ad733007956b0ea5af6dd8bd",
+            "shasum": ""
+        },
+        "require": {
+            "laravel/framework": "5.*|6.*|7.*"
+        },
+        "time": "2020-06-12T22:50:40+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "PrettyRoutes\\ServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "PrettyRoutes\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Gary Green",
+                "email": "holegary@gmail.com"
+            }
+        ],
+        "description": "Pretty routes for Laravel 5."
+    },
+    {
         "name": "hamcrest/hamcrest-php",
         "version": "v2.0.1",
         "version_normalized": "2.0.1.0",

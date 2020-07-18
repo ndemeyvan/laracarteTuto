@@ -85,6 +85,7 @@ class ComposerStaticInit0ca2419f1ce79b0e934a058681c7b8c7
             'Psr\\Log\\' => 8,
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
+            'PrettyRoutes\\' => 13,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
         ),
@@ -297,6 +298,10 @@ class ComposerStaticInit0ca2419f1ce79b0e934a058681c7b8c7
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
+        ),
+        'PrettyRoutes\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/garygreen/pretty-routes/src',
         ),
         'PhpParser\\' => 
         array (
@@ -2974,6 +2979,8 @@ class ComposerStaticInit0ca2419f1ce79b0e934a058681c7b8c7
         'PhpParser\\Parser\\Tokens' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Parser/Tokens.php',
         'PhpParser\\PrettyPrinterAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php',
         'PhpParser\\PrettyPrinter\\Standard' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php',
+        'PrettyRoutes\\PrettyRoutesController' => __DIR__ . '/..' . '/garygreen/pretty-routes/src/PrettyRoutesController.php',
+        'PrettyRoutes\\ServiceProvider' => __DIR__ . '/..' . '/garygreen/pretty-routes/src/ServiceProvider.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
