@@ -52,7 +52,6 @@ class ContactController extends Controller
         Mail::to(config('laracarte.admin_support_admin'))->send(new ContactMessage($message));
         flashy()->success('Votre message a ete envoyer , nous vous repondrons aussi tot');
         return redirect(route('root_path'));
-        //new ContactMessageCreated("Ndeme yvan","yvan@gmail.com","hello bonjour mois c'est ndeme yvan");
 
         // $name= $request->name;
         // $email= $request->email;
