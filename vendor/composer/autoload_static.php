@@ -29,6 +29,7 @@ class ComposerStaticInit0ca2419f1ce79b0e934a058681c7b8c7
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '0d8253363903f0ac7b0978dcde4e28a0' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/helpers.php',
+        '974ce3986b2f81344d3ce484b96c08e6' => __DIR__ . '/..' . '/mercuryseries/flashy/src/MercurySeries/Flashy/functions.php',
         'b4e3f29b106af37a2bb239f73cdf68c7' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
@@ -444,6 +445,10 @@ class ComposerStaticInit0ca2419f1ce79b0e934a058681c7b8c7
             array (
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
+            'MercurySeries\\Flashy' => 
+            array (
+                0 => __DIR__ . '/..' . '/mercuryseries/flashy/src',
+            ),
         ),
     );
 
@@ -467,6 +472,9 @@ class ComposerStaticInit0ca2419f1ce79b0e934a058681c7b8c7
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\ContactValidationRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ContactValidationRequest.php',
+        'App\\Mail\\ContactMessage' => __DIR__ . '/../..' . '/app/Mail/ContactMessage.php',
+        'App\\Mail\\ContactMessageCreated' => __DIR__ . '/../..' . '/app/Mail/ContactMessageCreated.php',
+        'App\\Message' => __DIR__ . '/../..' . '/app/Message.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -2202,6 +2210,11 @@ class ComposerStaticInit0ca2419f1ce79b0e934a058681c7b8c7
         'League\\Flysystem\\Util\\ContentListingFormatter' => __DIR__ . '/..' . '/league/flysystem/src/Util/ContentListingFormatter.php',
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
+        'MercurySeries\\Flashy\\Flashy' => __DIR__ . '/..' . '/mercuryseries/flashy/src/MercurySeries/Flashy/Flashy.php',
+        'MercurySeries\\Flashy\\FlashyNotifier' => __DIR__ . '/..' . '/mercuryseries/flashy/src/MercurySeries/Flashy/FlashyNotifier.php',
+        'MercurySeries\\Flashy\\FlashyServiceProvider' => __DIR__ . '/..' . '/mercuryseries/flashy/src/MercurySeries/Flashy/FlashyServiceProvider.php',
+        'MercurySeries\\Flashy\\LaravelSessionStore' => __DIR__ . '/..' . '/mercuryseries/flashy/src/MercurySeries/Flashy/LaravelSessionStore.php',
+        'MercurySeries\\Flashy\\SessionStore' => __DIR__ . '/..' . '/mercuryseries/flashy/src/MercurySeries/Flashy/SessionStore.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
         'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',

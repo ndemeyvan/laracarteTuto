@@ -1,5 +1,6 @@
 <?php
 
+use App\Mail\ContactMessage;
 use App\Mail\ContactMessageCreated;
 
 /*
@@ -34,7 +35,7 @@ Route::post('/contact',[
 ]);
 
 Route::get('/test_email',function(){
-    return new ContactMessageCreated();
+    return new ContactMessage("Ndeme yvan",'ndeme@gmail.com',"Merci pour ce merveilleux tuto sur laravel");
 });
 
 

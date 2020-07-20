@@ -1,7 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use config;
+use App\Message;
+use App\Mail\ContactMessage;
 use Illuminate\Http\Request;
+use App\Mail\ContactMessageCreated;
+use Illuminate\Support\Facades\Mail;
 use App\Http\Requests\ContactValidationRequest;
 
 class ContactController extends Controller
@@ -35,7 +40,20 @@ class ContactController extends Controller
     public function store(ContactValidationRequest $request)
     {
   
-        new ContactMessageCreated($request->name,$request->email,$request->message);
+        //return new ContactMessage($request->name,$request->email,$request->message);
+        // $message = new Message;
+        // $message->name = $request->name;
+        // $message->email = $request->email;
+        // $message->message = $request->message;
+        // $message->save();
+        // ou  
+        $message = Message::create($request->only('name','email','message'));
+
+        Mail::to(config('laracarte.admin_support_admin'))->send(new ContactMessage($message));
+        flashy()->success('Votre message a ete envoyer , nous vous repondrons aussi tot');
+        return redirect(route('root_path'));
+        //new ContactMessageCreated("Ndeme yvan","yvan@gmail.com","hello bonjour mois c'est ndeme yvan");
+
         // $name= $request->name;
         // $email= $request->email;
         // $message =  $request->message;
