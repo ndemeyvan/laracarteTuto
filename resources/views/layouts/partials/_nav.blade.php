@@ -1,5 +1,5 @@
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" 
         data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -25,16 +25,16 @@
                 Planet
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="laravel.com">Laravel.com</a>
-                <a class="dropdown-item" href="laravelcast.com">LaravelCast</a>
-                <a class="dropdown-item" href="laravel.io">laravel.io</a>
-                <a class="dropdown-item" href="larajob.com">laravelJob</a>
-                <a class="dropdown-item" href="laravel.com">laravelNews</a>
-                <a class="dropdown-item" href="laravel.com">laravelChat</a>
+                <a class="dropdown-item" href="https://laravel.com">Laravel.com</a>
+                <a class="dropdown-item" href="https://laravelcast.com">LaravelCast</a>
+                <a class="dropdown-item" href="https://laravel.io">laravel.io</a>
+                <a class="dropdown-item" href="https://larajob.com">laravelJob</a>
+                <a class="dropdown-item" href="https://laravel.com">laravelNews</a>
+                <a class="dropdown-item" href="https://laravel.com">laravelChat</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" {{set_active('contact_path')}}" href="{{route('contact_path')}}">Contact</a>
+              <a class="nav-link {{set_active('contact_path')}}" href="{{route('contact_path')}}">Contact</a>
             </li>
             
           </ul>

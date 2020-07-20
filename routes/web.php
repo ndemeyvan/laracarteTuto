@@ -14,30 +14,19 @@ use App\Mail\ContactMessageCreated;
 |
 */
 
-Route::get('/', [
-    'as'=>'root_path',
-    'uses'=>'PagesController@home'
-]);
+// Route::get('/', [
+//     'as'=>'root_path',
+//     'uses'=>'PagesController@home'
+// ]);
 
-Route::get('/about',[
-    'as'=>'about_path',
-    'uses'=>'PagesController@about'
-]);
+Route::view('/', 'pages.welcome')->name('root_path');
 
-Route::get('/contact',[
-    'as'=>'contact_path',
-    'uses'=>'ContactController@create'
-]);
+Route::view('/about', 'pages.about')->name('about_path');
 
-Route::post('/contact',[
-    'as'=>'contact_path',
-    'uses'=>'ContactController@store'
-]);
+// Route::redirect('/google', 'https://www.google.com'); redirige quand on entre /google dans le navigateur 
 
-Route::get('/test_email',function(){
-    return new ContactMessage("Ndeme yvan",'ndeme@gmail.com',"Merci pour ce merveilleux tuto sur laravel");
-});
+Route::get('/contact','ContactController@create')->name('contact_path');
 
+Route::post('/contact','ContactController@store')->name('contact_path');
 
-// Route::resource('/', 'ContactController');
 
