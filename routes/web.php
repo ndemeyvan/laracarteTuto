@@ -31,6 +31,6 @@ Route::post('/contact','ContactController@store')->name('contact_path');
 
 
 
-Auth::routes();
+Auth::routes(['verify'=>true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
